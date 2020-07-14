@@ -1,0 +1,16 @@
+{
+  "name": "@tfoxy/rush-poc--hello-world",
+  "version": "1.0.0",
+  "main": "dist",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && npm run build:mjs && npm run build:cjs",
+    "build:hot": "npm run clean && tsc -p tsconfig.mjs.json -w",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:mjs": "tsc -p tsconfig.mjs.json && ./build-scripts/build.sh rename_js_to_mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "typescript": "^3.9.6"
+  }
+}

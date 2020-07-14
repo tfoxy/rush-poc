@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "target": "ES5",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "diagnostics": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "declaration": true,
+    "types": [],
+    "lib": ["ES5", "ES2015.Promise", "ES2015.Iterable"]
+  },
+  "exclude": ["node_modules"]
+}
